@@ -1,1 +1,12 @@
-@import "_varia"
+@import "_variables.scss";
+
+.user-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include phone {
+        height: 100vh;
+    }
+}
+
