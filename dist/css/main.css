@@ -1,0 +1,53 @@
+.user-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .user-gallery {
+    height: 100vh;
+  }
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.user-gallery-gallery {
+  position: relative;
+  top: -80px;
+  width: 375px;
+  height: 1624px;
+  z-index: 2;
+}
+
+.heading-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  color: black;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */

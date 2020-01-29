@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_usergallery.scss";
 
+
 html {
     margin: 0;
     padding: 0;
@@ -9,15 +10,30 @@ html {
 
 }
 
+
+
+.user-gallery-gallery {
+    position: relative;
+    top: -80px;
+    width: 375px;
+    height: 1624px;
+    z-index: 2;
+         @include phone {
+            
+    }
+
+}
+
 .heading-one {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .heading-one-first {
         font-size: 4rem;
+        color: black;
+        z-index: 1;
         @include phone {
             
         }
     }
-}
+
