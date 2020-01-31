@@ -15,29 +15,24 @@ html {
 
 }
 
-.user-gallery {
+.heading {
+    @include phone {       
+        }
+    position: absolute;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+        font-size: 4rem;
+        color: white;
+        
+    }
+
+.user-gallery-gallery {
     position: relative;
     top: -200px;
     height: 1624px;
-    max-width: 700px;
+    max-width: 300px;
          @include phone {
             
     }
-
 }
-
-.heading-one {
-    display: flex;
-    align-items: center;
-    width: 303px;
-    height: 145px;
-    left: 45px;
-    top: 39px;
-
-        font-size: 4rem;
-        color: white;
-        @include phone {
-            
-        }
-    }
-
