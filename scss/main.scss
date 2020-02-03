@@ -1,9 +1,13 @@
 @import "_variables.scss";
 @import "_usergallery.scss";
 
+
 body {
-   
+
 background-color: #ABBECB;
+    @include phone {
+    }
+
 }
 
 html {
@@ -20,7 +24,7 @@ html {
         }
     position: absolute;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-align: center;
         font-size: 4rem;
         color: white;
@@ -28,11 +32,8 @@ html {
     }
 
 .user-gallery-gallery {
-    position: relative;
-    top: -200px;
-    height: 1624px;
-    max-width: 300px;
-         @include phone {
-            
+    
+    max-width: 300px; 
+         @include phone { 
     }
 }
