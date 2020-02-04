@@ -55,6 +55,40 @@ body {
 }
 
 .user-gallery-gallery {
-  max-width: 300px;
+  max-width: 30px;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .user-gallery-gallery {
+    max-width: 300px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #50739C;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  li a {
+    font-size: 2rem;
+  }
+}
+
+li a:hover {
+  background-color: #3C5982;
 }
 /*# sourceMappingURL=main.css.map */
