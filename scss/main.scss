@@ -2,14 +2,6 @@
 @import "_usergallery.scss";
 
 
-body {
-
-background-color: #ABBECB;
-    @include phone {
-    }
-
-}
-
 html {
     margin: 0;
     padding: 0;
@@ -19,17 +11,34 @@ html {
 
 }
 
-.heading {
-    @include phone {       
-        }
+body {
+
+background-color: #ABBECB;
+
+}
+
+.header {
+    position: relative;
+    height: 100%;
+
+    background-image: url(../dist/media/island.jpg);
+    background-position: center;
+    background-size: cover;
+
+.text-box {
     position: absolute;
-    width: 100%;
-    margin-top: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-        font-size: 4rem;
-        color: white;
+        }
         
-    }
+.heading-primary {
+    font-size: 4rem;
+        color: white;
+}
+}
+
 
 .user-gallery-gallery {
     
