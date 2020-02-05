@@ -16,14 +16,17 @@ body {
 background-color: #ABBECB;
 
 }
+.island {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ 
+}
 
 .header {
     position: relative;
     height: 100vh;
- background-image: url(../dist/media/island.jpg);
-    background-position: top;
-    background-size: cover;
-
+    
 .text-box {
    
     position: absolute;
@@ -35,6 +38,8 @@ background-color: #ABBECB;
         
 .heading-primary {
     font-size: 4rem;
+    text-align: center;
+    margin: 0 auto;
         color: white;
         
 }
