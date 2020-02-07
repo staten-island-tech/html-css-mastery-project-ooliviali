@@ -33,14 +33,18 @@ body {
 }
 
 .island {
-  width: 100%;
+  width: 125vh;
   height: 100vh;
-  overflow: hidden;
 }
 
 .header {
   position: relative;
   height: 100vh;
+  background-image: url(../dist/media/islandcrop.jpg);
+  background-position: top;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
 }
 
 .header .text-box {
@@ -59,15 +63,31 @@ body {
   color: white;
 }
 
+.user-gallery-header {
+  height: 10vh;
+}
+
 .user-gallery-gallery {
   max-width: 30px;
-  height: auto;
+  height: 60vh;
+  margin: 0 auto;
 }
 
 @media (min-width: 600px) {
   .user-gallery-gallery {
     max-width: 300px;
   }
+}
+
+.user-gallery-image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ul {
