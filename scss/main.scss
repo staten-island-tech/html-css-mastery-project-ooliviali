@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_usergallery.scss";
+@import "_flipcard.scss";
 
 
 html {
@@ -16,71 +17,7 @@ body {
 background-color: #ABBECB;
 
 }
-.island {
-    width: 125vh;
-    height: 100vh;
 
- 
-}
-
-.header {
-    position: relative;
-    height: 100vh;
-
-    background-image: url(../dist/media/islandcrop.jpg);
-    background-position: top;
-    background-size: cover;  
-    
-
-.text-box {
-   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-        }
-        
-.heading-primary {
-    font-size: 4rem;
-    text-align: center;
-    margin: 0 auto;
-        color: white;
-        
-}
-}
-
-.user-gallery-header {
-    height: 3vh;
-    font-size: 3rem;
-    color: white;
-    
-    
-    
-    
-    
-    
-    
-    
-    ;
-    
-}
-.user-gallery-gallery {
-   max-width: 30px;
-   height: 1vh;
-     margin: 0 auto;
-   
-         @include phone { max-width: 300px; 
-    }
-}
-
-.user-gallery-image {
-  
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-}
 
 ul {
     list-style-type: none;
@@ -108,47 +45,46 @@ ul {
     
   }
 
+.island {
 
-
-
-
-
-  .flip-card {
-    background-color: transparent;
-    width: 700px;
-    height: 240px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
+    min-width: 1000px;
+    height: auto;
+}
+.header {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
+    height: 100vh;
+
+
+    background-image: url(../dist/media/island.jpg);
+    background-position: top;
+    background-size: cover;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);
+
+
+.text-box {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+        }
+        
+.heading-primary {
+    font-size: 4rem;
+        color: white;
+        
+}
+}
+
+.salad {
+  width: 700px;
+  height: 240px;
+
   }
-  
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #50739C;
-    color: white;
-    transform: rotateY(180deg);
-  }
+
+.baklava {
+  width: 700px;
+  height: 240px;
+}
