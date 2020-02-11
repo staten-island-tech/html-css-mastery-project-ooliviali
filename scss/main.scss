@@ -45,38 +45,26 @@ ul {
     
   }
 
-.island {
-
-    min-width: 1000px;
-    height: auto;
-}
 .header {
     position: relative;
     height: 100vh;
-
-
     background-image: url(../dist/media/island.jpg);
     background-position: top;
     background-size: cover;
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);
-
+}
+.island {
+  height: 80vw; 
+}
 
 .text-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+width: 100%;
     text-align: center;
         }
         
-.heading-primary {
-    font-size: 4rem;
-        color: white;
-        
-}
-}
 
 .salad {
   width: 700px;
