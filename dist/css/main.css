@@ -1,5 +1,4 @@
 .user-gallery {
-  height: 150vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,13 +16,19 @@
 
 @media (min-width: 600px) {
   .user-gallery {
-    height: 50vh;
+    height: 30vh;
   }
 }
 
 @media (min-width: 900px) {
   .user-gallery {
-    height: 150vh;
+    height: 15vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .user-gallery {
+    height: 100vh;
   }
 }
 
@@ -32,19 +37,7 @@
   color: white;
 }
 
-.user-gallery-gallery {
-  max-width: 30px;
-  height: auto;
-}
-
-@media (min-width: 600px) {
-  .user-gallery-gallery {
-    max-width: 375px;
-  }
-}
-
 .flip-card {
-  padding: 15px;
   background-color: transparent;
   width: 700px;
   height: 240px;
@@ -117,7 +110,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -133,27 +126,28 @@ li a:hover {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   height: 100vh;
-  background-image: url(../dist/media/island.jpg);
+  background-image: url(../media/island.jpg);
   background-position: top;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);
 }
 
-.header .text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
+.heading-primary {
+  color: white;
+  font-size: 4rem;
 }
 
-.header .heading-primary {
-  font-size: 4rem;
-  color: white;
+.text-box {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 20vw;
 }
 
 .salad {

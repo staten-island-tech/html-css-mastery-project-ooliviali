@@ -6,12 +6,13 @@
     justify-content: center;
     align-items: center;
     @include phone {
-        height: 50vh;
+        height: 30vh;
+
     }
     @include laptop {
         height: 15vh;
     }
-    @include ipad {
+    @include tablet {
         height: 100vh;
     }
 }

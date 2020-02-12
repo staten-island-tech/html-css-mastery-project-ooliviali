@@ -32,7 +32,7 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 14px 16px;
     text-decoration: none;
         @include phone { 
@@ -46,23 +46,30 @@ ul {
   }
 
 .header {
+  display: flex;
+  
     position: relative;
     height: 100vh;
-    background-image: url(../dist/media/island.jpg);
+    background-image: url(../media/island.jpg);
     background-position: top;
     background-size: cover;
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);
 }
-.island {
-  height: 80vw; 
+
+.heading-primary {
+
+  color: white;
+    font-size: 4rem;
+
 }
 
 .text-box {
     position: absolute;
 width: 100%;
     text-align: center;
+    height: 20vw;
         }
         
 
