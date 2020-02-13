@@ -47,7 +47,7 @@ ul {
 
 .header {
   display: flex;
-  
+   
     position: relative;
     height: 100vh;
     background-image: url(../media/island.jpg);
@@ -61,7 +61,11 @@ ul {
 .heading-primary {
 
   color: white;
-    font-size: 4rem;
+    font-size: 3rem;
+    @include phone {
+      font-size: 4rem;
+    }
+    @include laptop
 
 }
 
@@ -69,7 +73,7 @@ ul {
     position: absolute;
 width: 100%;
     text-align: center;
-    height: 20vw;
+    height: 50vw;
         }
         
 
