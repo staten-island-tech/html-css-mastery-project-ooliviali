@@ -33,8 +33,21 @@
 }
 
 .user-gallery-header {
-  font-size: 2.5rem;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3rem;
   color: white;
+}
+
+@media (min-width: 600px) {
+  .user-gallery-header {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .user-gallery-header {
+    font-size: 4rem;
+  }
 }
 
 .flip-card {
@@ -107,17 +120,24 @@ ul {
 }
 
 li a {
+  font-family: 'Julius Sans One', sans-serif;
   display: block;
   color: white;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 @media (min-width: 600px) {
   li a {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  li a {
+    font-size: 3rem;
   }
 }
 
@@ -139,6 +159,7 @@ li a:hover {
 }
 
 .heading-primary {
+  font-family: 'Julius Sans One', sans-serif;
   color: white;
   font-size: 3rem;
 }
@@ -146,6 +167,18 @@ li a:hover {
 @media (min-width: 600px) {
   .heading-primary {
     font-size: 4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .heading-primary {
+    font-size: 6rem;
   }
 }
 

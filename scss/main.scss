@@ -29,15 +29,19 @@ ul {
   
   
   li a {
+    font-family: 'Julius Sans One', sans-serif;
     display: block;
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 14px 16px;
     text-decoration: none;
         @include phone { 
-            font-size: 2rem;
+            font-size: 2.5rem;
     }
+      @include laptop {
+        font-size: 3rem;
+      }
   }
   
   li a:hover {
@@ -59,13 +63,19 @@ ul {
 }
 
 .heading-primary {
-
+  font-family: 'Julius Sans One', sans-serif;
   color: white;
+
     font-size: 3rem;
     @include phone {
       font-size: 4rem;
     }
-    @include laptop
+    @include laptop {
+      font-size: 5rem;
+    }
+    @include desktop {
+      font-size: 6rem;
+    }
 
 }
 
