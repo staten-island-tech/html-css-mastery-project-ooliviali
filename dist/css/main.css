@@ -20,15 +20,15 @@
   }
 }
 
-@media (min-width: 900px) {
-  .user-gallery {
-    height: 15vh;
-  }
-}
-
 @media (min-width: 600px) {
   .user-gallery {
     height: 100vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .user-gallery {
+    height: 120vh;
   }
 }
 
@@ -146,16 +146,93 @@ li a:hover {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+  width: 100%;
   height: 100vh;
-  background-image: url(../media/island.jpg);
-  background-position: top;
+  background-position: center center;
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.figure {
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+}
+
+.header > figure {
+  -webkit-animation: slide 15s linear infinite 0s;
+          animation: slide 15s linear infinite 0s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100vh;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+
+.header > figure:nth-child(1) {
+  background-image: url("../media/greece.jpg");
+}
+
+.header > figure:nth-child(2) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  background-image: url("../media/greece2.jpg");
+}
+
+.header > figure:nth-child(3) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  background-image: url("../media/greece3.jpg");
+}
+
+.header > figure:nth-child(4) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  background-image: url("../media/island.jpg");
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  33% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  33% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .heading-primary {

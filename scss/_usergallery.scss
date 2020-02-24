@@ -7,13 +7,16 @@
     align-items: center;
     @include phone {
         height: 30vh;
-
+        
     }
-    @include laptop {
-        height: 15vh;
-    }
+ 
     @include tablet {
         height: 100vh;
+    }   
+    
+    @include laptop {
+        height: 120vh;
+
     }
 }
 
