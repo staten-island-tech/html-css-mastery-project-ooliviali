@@ -3,9 +3,11 @@ $colors: (
 );
 
 $phone: 600px;
-$desktop: 1100px;
-$laptop: 900px;
 $tablet: 600px;
+$laptop: 900px;
+$desktop: 1100px;
+
+
 
 
 @function color($color-name) {

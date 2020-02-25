@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     @include phone {
-        height: 30vh;
+        height: 80vh;
         
     }
  
@@ -20,7 +20,7 @@
     }
 }
 
-.user-gallery-header {
+.user-gallery-header, .user-gallery-two-header {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 3rem;
     @include phone {
@@ -31,5 +31,11 @@
 }
 
 
- 
- 
+.user-gallery-two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

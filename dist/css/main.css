@@ -16,7 +16,7 @@
 
 @media (min-width: 600px) {
   .user-gallery {
-    height: 30vh;
+    height: 80vh;
   }
 }
 
@@ -32,22 +32,40 @@
   }
 }
 
-.user-gallery-header {
+.user-gallery-header, .user-gallery-two-header {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 3rem;
   color: white;
 }
 
 @media (min-width: 600px) {
-  .user-gallery-header {
+  .user-gallery-header, .user-gallery-two-header {
     font-size: 3.5rem;
   }
 }
 
 @media (min-width: 1100px) {
-  .user-gallery-header {
+  .user-gallery-header, .user-gallery-two-header {
     font-size: 4rem;
   }
+}
+
+.user-gallery-two {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
 
 .flip-card {
@@ -267,13 +285,60 @@ li a:hover {
   height: 50vw;
 }
 
-.salad {
+.salad, .baklava {
   width: 700px;
   height: 240px;
 }
 
-.baklava {
-  width: 700px;
-  height: 240px;
+img {
+  width: 100%;
+}
+
+.user-gallery-two {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.caption {
+  margin: 0;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2rem;
+  padding: 10px 10px 0 10px;
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 3%;
+  width: 300px;
+  height: 300px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    width: 550px;
+    height: 550px;
+  }
+}
+
+#content {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -46,7 +46,7 @@ ul {
   
   li a:hover {
     background-color: #3C5982;
-    
+  
   }
 
 .header{
@@ -135,13 +135,54 @@ width: 100%;
         }
         
 
-.salad {
+.salad, .baklava {
   width: 700px;
   height: 240px;
 
   }
 
-.baklava {
-  width: 700px;
-  height: 240px;
+
+img {
+  width: 100%;
+}
+
+.user-gallery-two {
+
+height: min-content;
+}
+
+
+.caption {
+  margin: 0;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2rem;
+  padding: 10px 10px 0 10px;
+  background-color: white;
+}  
+
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 3%;
+  width: 300px;
+  height: 300px;
+    @include phone {
+      width: 350px;
+      height: 350px;
+    }
+    @include tablet {
+      width: 450px;
+      height: 450px;
+    }
+
+    @include desktop {
+      width: 550px;
+      height: 550px;
+    }
+}
+
+
+#content {
+  text-align: center;
 }
