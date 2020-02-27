@@ -70,8 +70,8 @@
 
 .flip-card {
   background-color: transparent;
-  width: 700px;
-  height: 240px;
+  width: 500px;
+  height: 270px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   padding: 10px;
@@ -79,8 +79,8 @@
 
 .flip-card-inner {
   position: absolute;
-  width: 700px;
-  height: 240px;
+  width: 500px;
+  height: 270px;
   text-align: center;
   font-size: 1.5rem;
   padding: 10px;
@@ -99,8 +99,8 @@
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 700px;
-  height: 240px;
+  width: 500px;
+  height: 270px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -285,9 +285,16 @@ li a:hover {
   height: 50vw;
 }
 
-.salad, .baklava {
-  width: 700px;
-  height: 240px;
+.coffee, .balls, .baklava {
+  width: 500px;
+  height: 270px;
+}
+
+@media (min-width: 600px) {
+  .coffee, .balls, .baklava {
+    width: 300px;
+    height: auto;
+  }
 }
 
 img {

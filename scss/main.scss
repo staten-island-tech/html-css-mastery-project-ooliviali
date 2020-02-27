@@ -135,9 +135,13 @@ width: 100%;
         }
         
 
-.salad, .baklava {
-  width: 700px;
-  height: 240px;
+.coffee, .balls, .baklava {
+  width: 500px;
+  height: 270px;
+ @include phone {
+   width: 300px;
+   height: auto;
+ }
 
   }
 
