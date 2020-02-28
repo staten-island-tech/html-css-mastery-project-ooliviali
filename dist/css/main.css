@@ -285,20 +285,17 @@ li a:hover {
   height: 50vw;
 }
 
-.coffee, .balls, .baklava {
+img {
   width: 500px;
   height: 270px;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
-  .coffee, .balls, .baklava {
+  img {
     width: 300px;
     height: auto;
   }
-}
-
-img {
-  width: 100%;
 }
 
 .user-gallery-two {
