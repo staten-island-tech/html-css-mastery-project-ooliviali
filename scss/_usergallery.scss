@@ -5,19 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include phone {
-        height: 80vh;
-        
-    }
- 
-    @include tablet {
-        height: 100vh;
-    }   
-    
-    @include laptop {
-        height: 120vh;
 
-    }
 }
 
 .user-gallery-header, .user-gallery-two-header {
@@ -38,4 +26,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+
+    }
+
