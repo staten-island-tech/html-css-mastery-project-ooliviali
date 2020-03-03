@@ -115,6 +115,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: auto;
   background-color: #50739C;
 }
 
@@ -160,6 +161,7 @@ li a:hover {
 }
 
 .header > figure {
+  margin: 0;
   -webkit-animation: slide 12s linear infinite 0s;
           animation: slide 12s linear infinite 0s;
   -webkit-backface-visibility: hidden;
@@ -171,7 +173,6 @@ li a:hover {
   opacity: 0;
   position: absolute;
   width: 100%;
-  margin: auto;
 }
 
 .header > figure:nth-child(1) {
@@ -338,12 +339,10 @@ img {
 }
 
 .mapm {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
