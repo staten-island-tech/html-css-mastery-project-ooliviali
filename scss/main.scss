@@ -18,39 +18,38 @@ background-color: #ABBECB;
 
 }
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  height: auto;
-    background-color: #50739C;
-
-  }
+nav {
+  width: 300px;
+  background: white;
+  color: black;
+  clip-path: circle(24px at 32px 24px);
+  transition: 
+  clip-path 0.75s/2;
   
+  &hover {
+  transition-timing-function: ease-out;
+  transition-duration: 0.75s;
+  clip-path: circle(390px at 150px 24px);
+}
+}
 
- 
-  li a {
-    font-family: 'Julius Sans One', sans-serif;
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    padding: 14px 16px;
-    text-decoration: none;
-        @include phone { 
-            font-size: 2.5rem;
-    }
-      @include laptop {
-        font-size: 3rem;
-      }
-  }
-  
-  li a:hover {
-    background-color: #3C5982;
-  
-  }
+a{
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover { background: yellow;}
+  &:active { background: yellow;}
+  /*https://codepen.io/bennettfeely/pen/fHdFb */
+}
+
+@mixin line {
+
+}
+
 
 .header{
 

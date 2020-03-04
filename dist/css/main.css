@@ -110,39 +110,46 @@ body {
   background-color: #ABBECB;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: auto;
-  background-color: #50739C;
+nav {
+  width: 300px;
+  background: white;
+  color: black;
+  -webkit-clip-path: circle(24px at 32px 24px);
+          clip-path: circle(24px at 32px 24px);
+  -webkit-transition: -webkit-clip-path 0.75s/2;
+  transition: -webkit-clip-path 0.75s/2;
+  transition: clip-path 0.75s/2;
+  transition: clip-path 0.75s/2, -webkit-clip-path 0.75s/2;
 }
 
-li a {
-  font-family: 'Julius Sans One', sans-serif;
+navhover {
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 150px 24px);
+          clip-path: circle(390px at 150px 24px);
+}
+
+a {
   display: block;
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  padding: 14px 16px;
-  text-decoration: none;
+  line-height: 50px;
+  padding: 0 20px;
+  color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /*https://codepen.io/bennettfeely/pen/fHdFb */
 }
 
-@media (min-width: 600px) {
-  li a {
-    font-size: 2.5rem;
-  }
+a:hover {
+  background: yellow;
 }
 
-@media (min-width: 900px) {
-  li a {
-    font-size: 3rem;
-  }
-}
-
-li a:hover {
-  background-color: #3C5982;
+a:active {
+  background: yellow;
 }
 
 .header {
