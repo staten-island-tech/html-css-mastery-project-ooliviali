@@ -47,7 +47,29 @@ a{
 }
 
 @mixin line {
+  width: 20px;
+  height: 2px;
+  background: black;
+}
 
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  transform-origin: 32px 24px;
+
+  div {
+    position: relative;
+    @include line;
+  
+  &:before, &:after {
+display: block;
+content: "";
+@include line;
+position: absolute;
+  }
+  &:before {top: -7px;}
+  &:before { top: 7px;}
+}
 }
 
 
@@ -179,25 +201,24 @@ height: min-content;
   text-align: center;
 }
 
-.map {
- 
-width: 75%;
-  @include phone {
-height: 300px;
-  }
- @include tablet {
-height: 400px;
- }
- @include laptop {
-height: 500px;
- }
- @include desktop {
-height: 600px;
- }
-}
-.mapm {
+
+
+.map{
+  display: flex;
+  width: 100%;
   position: relative;
-   display: flex;
  align-items: center;
 
 } 
+
+.fourth {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  @include phone {
+    flex-direction: row;
+  }
+  
+}
