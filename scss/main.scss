@@ -19,9 +19,10 @@ background-color: #ABBECB;
 }
 
 nav {
-  
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
   width: 300px;
-  background: white;
+  background: rgb(231, 232, 233);
   color: black;
   -webkit-clip-path: circle(24px at 30px 24px);
   clip-path: circle(24px at 32px 24px);
@@ -43,9 +44,9 @@ a{
   cursor: pointer;
   user-select: none;
 
-  &:hover { background: yellow;}
-  &:active { background: yellow;}
-  /*https://codepen.io/bennettfeely/pen/fHdFb */
+  &:hover { background: rgb(170, 186, 196); 
+    color: white;}
+  &:active { background: rgb(204, 204, 204);}
 }
 
 @mixin line {
@@ -89,6 +90,7 @@ position: absolute;
   background-position: top;
 }
 .header > figure {
+
     margin:  0;
     animation: slide 12s linear infinite 0s;
   backface-visibility: hidden;
@@ -203,7 +205,15 @@ height: auto;
   width: 100%;
   position: relative;
  align-items: center;
-
+ @include tablet {
+   width: 360px;
+ }
+  @include laptop {
+    width: 500px;
+  }
+  @include desktop {
+    width: 620px;
+  }
 } 
 
 .fourth {
@@ -212,8 +222,18 @@ height: auto;
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
+  @include tablet {
+    flex-direction: row;
+  }
   @include phone {
     flex-direction: row;
   }
-  
+  .desc {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(77, 77, 77);
+  }
 }

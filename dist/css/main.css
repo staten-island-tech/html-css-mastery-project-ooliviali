@@ -111,8 +111,10 @@ body {
 }
 
 nav {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
   width: 300px;
-  background: white;
+  background: #e7e8e9;
   color: black;
   -webkit-clip-path: circle(24px at 30px 24px);
   clip-path: circle(24px at 32px 24px);
@@ -141,15 +143,15 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  /*https://codepen.io/bennettfeely/pen/fHdFb */
 }
 
 a:hover {
-  background: yellow;
+  background: #aabac4;
+  color: white;
 }
 
 a:active {
-  background: yellow;
+  background: #cccccc;
 }
 
 .navicon {
@@ -349,6 +351,24 @@ img {
           align-items: center;
 }
 
+@media (min-width: 600px) {
+  .map {
+    width: 360px;
+  }
+}
+
+@media (min-width: 900px) {
+  .map {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .map {
+    width: 620px;
+  }
+}
+
 .fourth {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,5 +389,14 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.fourth .desc {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #4d4d4d;
 }
 /*# sourceMappingURL=main.css.map */
