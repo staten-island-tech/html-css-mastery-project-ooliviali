@@ -99,7 +99,7 @@
 }
 
 html {
-  margin: 0;
+  margin: 0rem;
   padding: 0;
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
@@ -108,6 +108,7 @@ html {
 
 body {
   background-color: #ABBECB;
+  margin: 0rem;
 }
 
 nav {
@@ -380,6 +381,15 @@ img {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .fourth {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media (min-width: 600px) {
