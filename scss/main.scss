@@ -18,9 +18,10 @@ margin: 0rem;
 }
 
 nav {
+  margin: 0;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5rem;
-  width: 300px;
+  width: 250px;
   background: rgb(231, 232, 233);
   color: black;
   -webkit-clip-path: circle(24px at 30px 24px);
@@ -32,6 +33,7 @@ nav {
   transition-timing-function: ease-out;
   transition-duration: 0.75s;
   clip-path: circle(390px at 150px 24px);
+
 }
 }
 
@@ -48,40 +50,30 @@ a{
   &:active { background: rgb(204, 204, 204);}
 }
 
-@mixin line {
-  width: 20px;
-  height: 2px;
-  background: black;
-}
 
 .navicon {
+  margin: 10px;
   padding: 23px 20px;
   cursor: pointer;
   transform-origin: 32px 24px;
 
-  div {
-    position: relative;
-    @include line;
-  
-  &:before, &:after {
-display: block;
-content: "";
-@include line;
-position: absolute;
-  }
-  &:before {top: -7px;}
-  &:before { top: 7px;}
-}
 }
 
+.fas {
+  margin: -5px;
+  float: left;
+}
 
 .header{
+    margin: 0;
     width: 100%;
     height: 100vh;
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;
+    filter: grayscale(0.7);
 }
+
 .figure {
   width: 100%;
   height: 100vh;
@@ -89,7 +81,7 @@ position: absolute;
   background-position: top;
 }
 .header > figure {
-
+  
     margin:  0;
     animation: slide 12s linear infinite 0s;
   backface-visibility: hidden;
@@ -139,18 +131,19 @@ position: absolute;
   
 
 .heading-primary {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Berkshire Swash', Helvetica, sans-serif;
   color: white;
+  text-shadow: 3px 3px rgb(102, 102, 102);
 
-    font-size: 3rem;
+    font-size: 4.5rem;
     @include phone {
-      font-size: 4rem;
+      font-size: 4.5rem;
     }
     @include laptop {
       font-size: 5rem;
     }
     @include desktop {
-      font-size: 6rem;
+      font-size: 5.5rem;
     }
 
 }
@@ -167,6 +160,11 @@ img {
   height: auto;
  
 }
+
+.div {
+    height: 1000px;
+    background-color: red;
+  }
 
 .user-gallery-two {
 background: linear-gradient(rgb(134, 158, 173), rgba(80, 116, 156, 0.623));
@@ -215,7 +213,7 @@ height: auto;
   }
 } 
 
-.fourth {
+.last{
  
   display: flex;
   flex-direction: column;
