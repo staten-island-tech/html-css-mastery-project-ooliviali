@@ -13,7 +13,7 @@ html {
 }
 
 body {
-background-color: #ABBECB;
+background-color: rgb(44, 44, 44);
 margin: 0rem;
 }
 
@@ -47,7 +47,8 @@ a{
 
   &:hover { background: rgb(170, 186, 196); 
     color: white;}
-  &:active { background: rgb(204, 204, 204);}
+  &:active { background: rgb(170, 186, 196);
+    color: white;}
 }
 
 
@@ -131,9 +132,9 @@ position: absolute;
   
 
 .heading-primary {
-  font-family: 'Berkshire Swash', Helvetica, sans-serif;
+  font-family: 'Macondo', cursive;
   color: white;
-  text-shadow: 3px 3px rgb(102, 102, 102);
+  text-shadow: 3px 3px rgb(58, 58, 58);
 
     font-size: 4.5rem;
     @include phone {
@@ -143,14 +144,14 @@ position: absolute;
       font-size: 5rem;
     }
     @include desktop {
-      font-size: 5.5rem;
+      font-size: 7rem;
     }
 
 }
 
 .text-box {
     position: absolute;
-width: 100%;
+    width: 100%;
     text-align: center;
     height: 50vw;
         }
@@ -160,17 +161,6 @@ img {
   height: auto;
  
 }
-
-.div {
-    height: 1000px;
-    background-color: red;
-  }
-
-.user-gallery-two {
-background: linear-gradient(rgb(134, 158, 173), rgba(80, 116, 156, 0.623));
-height: auto;
-}
-
 
 .caption {
   margin: 0;
