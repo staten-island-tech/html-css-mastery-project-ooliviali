@@ -52,7 +52,7 @@
 
 .flip-card {
   background-color: transparent;
-  width: 500px;
+  width: 300px;
   height: 270px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
@@ -61,7 +61,7 @@
 
 .flip-card-inner {
   position: absolute;
-  width: 500px;
+  width: 300px;
   height: 270px;
   text-align: center;
   font-size: 1.5rem;
@@ -81,8 +81,7 @@
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 500px;
-  height: 270px;
+  width: 300px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -395,7 +394,6 @@ img {
 
 .last .desc {
   width: 100%;
-  padding: 20px;
   text-align: center;
   font-size: 3rem;
   font-family: 'Julius Sans One', sans-serif;
