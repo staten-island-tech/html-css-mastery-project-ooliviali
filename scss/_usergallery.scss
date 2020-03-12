@@ -3,15 +3,19 @@
 .user-gallery {
     border: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+@include desktop {
+    flex-direction: row;
+    margin: 150px;
+}
 }
 
 .user-gallery-header {
     display: flex;
     flex-direction: column;
+
 }
 
 .user-gallery-header, .user-gallery-two-header {
@@ -27,11 +31,14 @@
 
 .user-gallery-two {
     position: relative;
+    margin: 0;
+    float: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background:rgb(44, 44, 44);
+       
     }
 
