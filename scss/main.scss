@@ -2,40 +2,33 @@
 @import "_usergallery.scss";
 @import "_flipcard.scss";
 
-
 html {
     margin: 0rem;
     padding: 0;
     font-size: 62.5%;
     box-sizing: border-box;
-
-
 }
 
 body {
-background-color: rgb(44, 44, 44);
+background-color: rgb(39, 39, 39);
 margin: 0rem;
 }
 
-nav {
+.nav-first {
   margin: 0;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5rem;
   width: 250px;
   background: rgb(231, 232, 233);
   color: black;
-  -webkit-clip-path: circle(24px at 30px 24px);
   clip-path: circle(24px at 32px 24px);
-  transition: 
-  clip-path 0.75s;
+  transition: clip-path 0.75s;
   
   &:hover {
   transition-timing-function: ease-out;
   transition-duration: 0.75s;
   clip-path: circle(390px at 150px 24px);
-
-}
-}
+  }
 
 a{
   display: block;
@@ -50,19 +43,26 @@ a{
   &:active { background: rgb(170, 186, 196);
     color: white;}
 }
+}
 
-
+.text-box {
+  padding-top: 150px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+        
 .navicon {
-  margin: 10px;
+  margin: 0;
+  padding: 100px;
   padding: 23px 20px;
   cursor: pointer;
   transform-origin: 32px 24px;
-
 }
 
 .fas {
-  margin: -5px;
-  float: left;
+  margin-top: -6px;
+  margin-left: 5px;
 }
 
 .header{
@@ -78,27 +78,25 @@ a{
 .figure {
   width: 100%;
   height: 100vh;
-
   background-position: top;
 }
+
 .header > figure {
-  
-    margin:  0;
-    animation: slide 12s linear infinite 0s;
+  margin: 0;
+  animation: slide 12s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
   color: transparent;
   height: 100vh;
   opacity: 0;
-position: absolute;
+  position: absolute;
   width: 100%;
-
 }
 
 .header > figure:nth-child(1) {
   animation-delay: 0s;
-  background-image: url('../media/greece.jpg');
+  background-image: url('../media/greece.jpg') ;
 }
 .header > figure:nth-child(2) {
   animation-delay: 4s;
@@ -130,13 +128,14 @@ position: absolute;
   }
 }
   
-
 .heading-primary {
-  font-family: 'Macondo', cursive;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
   color: white;
   text-shadow: 3px 3px rgb(58, 58, 58);
-
-    font-size: 4.5rem;
+  font-size: 4.5rem;
+  text-align: center;    
     @include phone {
       font-size: 4.5rem;
     }
@@ -149,38 +148,32 @@ position: absolute;
 
 }
 
+
+heading-primary:hover {
+  sub {
+    opacity: 1;
+    transition: ease-in-out;
+  }
+}
+
+
 .parallax {
   background-image: url("../media/statue.jpg");
-  height: 30%;
+  height: 30%; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  @include phone {
+   height: 40%;
+  }
 }
 
-.text-box {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    height: 50vw;
-        }
-   
-        
 img { 
-   width: 300px;
+  width: 300px;
   height: auto;
  
 }
-
-.caption {
-  margin: 0;
-  text-align: center;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 2rem;
-  padding: 10px 10px 0 10px;
-  background-color: white;
-}  
 
 .container, .img {
   position: relative;
@@ -188,9 +181,7 @@ img {
   margin: 5%;
   width: 300px;
   height: auto;
-   
 }
-
 
 #content {
   text-align: center;
@@ -198,29 +189,13 @@ img {
 
 
 
-.map{
-  display: flex;
-  width: 100%;
-  position: relative;
- align-items: center;
- @include tablet {
-   width: 360px;
- }
-  @include laptop {
-    width: 500px;
-  }
-  @include desktop {
-    width: 620px;
-  }
-} 
-
-.last{
- 
+.last {
   display: flex;
   flex-direction: column;
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
+
   @include tablet {
     flex-direction: row;
   }
@@ -235,4 +210,36 @@ img {
     font-family: 'Julius Sans One', sans-serif;
     color: rgb(77, 77, 77);
   }
+}
+
+.map {
+  
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+    @include tablet {
+    width: 360px;
+  }
+    @include laptop {
+    width: 500px;
+  }
+    @include desktop {
+    width: 620px;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+
+  height: 40vh;
+  background-color: rgb(19, 19, 19);
+}
+.fab {
+
+font-size: 30px;
+margin: 10px;
+color: white;  
+
 }
