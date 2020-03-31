@@ -7,38 +7,67 @@
     align-items: center;
         @include desktop {
         flex-direction: row;
-        margin: 150px;
     }
 }
 
-
-
+.food {
+  width: 300px;
+  height: auto;
+}
 
 .user-gallery-two { 
-    font-size: 2rem;
-        @include phone {
-        font-size: 2.5rem; 
-    }
-        @include desktop{ 
-        font-size: 3rem; 
-    }
-    color: white;
+    display: flex;
+    font-size: 1.72rem;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     margin: 50px;
-    float: none;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: auto;   
 
-    letter-spacing: 0;
+        @include tablet {
+        font-size: 3rem; 
+    }
+        @include desktop{ 
+        font-size: 4rem; 
+    }
 }
 
-user-gallery-header {
-color: white;
-display: block
+
+.container, .img {
+  position: relative;
+  display: inline-block;
+  margin: 5%;
+}
+
+.imgtwo { 
+  width: 300px;
+  height: auto;  
+  @include tablet {
+    width: 350px;
+  }
+  @include laptop {
+    width: 400px;
+  }
+  @include desktop {
+    width: 500px;
+  }
+}
+
+.overlay {
+  font-size: 2.1rem;
+  color: white;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.container:hover .overlay {
+  opacity: 1;
 }
 
 .user-gallery-header {
@@ -53,7 +82,10 @@ display: block
   background-size: 0% 100%, 100% 100%;
   background-position: center;
     &:hover {
-        letter-spacing: 8px;
+        letter-spacing: 4px;
+        @include phone {
+          letter-spacing: 7px;
+        }
       background-size: 100% 100%, 100% 100%;
     }
   }
