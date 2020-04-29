@@ -188,6 +188,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -210,7 +211,7 @@ body {
   transition: clip-path 0.75s, -webkit-clip-path 0.75s;
 }
 
-.nav-first:hover {
+.nav-first:hover, .nav-first:active {
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   -webkit-transition-duration: 0.75s;
